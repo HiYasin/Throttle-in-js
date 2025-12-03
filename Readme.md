@@ -1,4 +1,4 @@
-# Throttle vs Debounce — Demo
+# Throttle Demo
 
 This small demo illustrates the difference between *throttle* and *debounce* using three example buttons:
 
@@ -66,3 +66,6 @@ Notes
 - The `throttle` implementation here triggers immediately the first time and ensures calls are spaced by `limit` ms.
 - The `debounce` implementation restarts its timer on each event and only triggers after `delay` ms of inactivity.
 
+Reference
+- Blog: https://kettanaito.com/blog/debounce-vs-throttle
+- Debounce Repo: https://github.com/HiYasin/debouncing-in-react
