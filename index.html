@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Throttle Example</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Throttling Demo</h1>
+        
+        <div class="demo-section">
+            <h2>Without Throttle (Default)</h2>
+            <button id="normalButton">Click Me Rapidly!</button>
+            <div class="counter" id="normalCounter">0</div>
+            <div class="info">Every click increments the counter immediately</div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>With Throttle (1 second delay)</h2>
+            <button id="throttleButton">Click Me Rapidly!</button>
+            <div class="counter" id="throttleCounter">0</div>
+            <div class="info">Counter updates at most once per second, no matter how many times you click</div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>With Debounce (1 second delay)</h2>
+            <button id="debounceButton">Click Me Rapidly!</button>
+            <div class="counter" id="debounceCounter">0</div>
+            <div class="info">Counter updates only after you stop clicking for 1 second</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
